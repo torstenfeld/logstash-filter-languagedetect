@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-filter-languagedetect'
-  s.version = '0.0.1'
+  s.version = '0.1.0'
   s.version = "#{s.version}-alpha-#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS']
   s.licenses = ['Apache License (2.0)']
   s.summary = "This example filter replaces the contents of the message field with the specified value."
