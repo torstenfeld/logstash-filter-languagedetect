@@ -1,7 +1,7 @@
 # encoding: utf-8
 require "logstash/filters/base"
 require "logstash/namespace"
-require 'whatlanguage'
+require 'whatlanguage/string'
 
 # This example filter will replace the contents of the default 
 # message field with whatever you specify in the configuration.
@@ -38,7 +38,7 @@ class LogStash::Filters::Languagedetect < LogStash::Filters::Base
 
     text_to_detect = event[@source]
     if @useiso
-      lang_found = text_to_detect.language
+      lang_found = text_to_detect.language_iso
     else
       lang_found = text_to_detect.language
     end
