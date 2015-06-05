@@ -1,11 +1,11 @@
 require 'spec_helper'
-require "logstash/filters/example"
+require "lib/logstash/filters/languagedetect"
 
-describe LogStash::Filters::Example do
+describe LogStash::Filters::Languagedetect do
   describe "Set to Hello World" do
     let(:config) do <<-CONFIG
       filter {
-        example {
+        languagedetect {
           message => "Hello World"
         }
       }
