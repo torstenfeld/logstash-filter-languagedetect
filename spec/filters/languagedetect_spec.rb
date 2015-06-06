@@ -1,6 +1,8 @@
 # encoding: utf-8
 require File.absolute_path(File.join(File.dirname(__FILE__), '../../spec/spec_helper'))
 require File.absolute_path(File.join(File.dirname(__FILE__), '../../lib/logstash/filters/languagedetect'))
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 
 describe LogStash::Filters::Languagedetect do
   describe "with defaults and non iso languages" do
