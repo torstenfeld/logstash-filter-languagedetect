@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-filter-languagedetect'
-  s.version = '0.1.1'
+  s.version = '0.2.0'
   s.version = "#{s.version}.pre.#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS'] and ENV['TRAVIS_BRANCH'] != 'master'
   s.licenses = ['Apache License (2.0)']
   s.summary = "This example filter replaces the contents of the message field with the specified value."
@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
 
   # Files
   s.files = `git ls-files`.split($\)
-   # Tests
+  # Tests
   s.test_files = s.files.grep(%r{^(test|spec|features)/})
 
   # Special flag to let us know this is actually a logstash plugin
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
 
   # Gem dependencies
   s.add_runtime_dependency "logstash-core", '>= 1.4.0', '< 2.0.0'
-  s.add_runtime_dependency "whatlanguage", '>= 1.0.6'
+  s.add_runtime_dependency "whatlanguage", '~> 1.0.5'
   s.add_development_dependency 'logstash-devutils'
+  s.add_development_dependency 'coveralls', '~> 0.8.1'
 end
