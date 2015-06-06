@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
 
   # Files
   s.files = `git ls-files`.split($\)
-   # Tests
+  # Tests
   s.test_files = s.files.grep(%r{^(test|spec|features)/})
 
   # Special flag to let us know this is actually a logstash plugin
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
 
   # Gem dependencies
   s.add_runtime_dependency "logstash-core", '>= 1.4.0', '< 2.0.0'
-  s.add_runtime_dependency "whatlanguage", '>= 1.0.6'
+  s.add_runtime_dependency "whatlanguage", '~> 1.0.5'
   s.add_development_dependency 'logstash-devutils'
+  s.add_development_dependency 'coveralls', '~> 0.8.1'
 end

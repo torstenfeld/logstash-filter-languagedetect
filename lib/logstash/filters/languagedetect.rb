@@ -65,10 +65,34 @@ class LogStash::Filters::Languagedetect < LogStash::Filters::Base
   def filter(event)
 
     text_to_detect = event[@source]
+    lang_found = @wl.language(text_to_detect)
+
     if @useiso
-      lang_found = @wl.language_iso(text_to_detect)
-    else
-      lang_found = @wl.language(text_to_detect)
+      iso_codes = {
+        nil => nil,
+        :arabic => :ar,
+        :danish => :da,
+        :dutch  => :nl,
+        :english => :en,
+        :farsi => :fa,
+        :finnish => :fi,
+        :french => :fr,
+        :german => :de,
+        :greek => :el,
+        :hebrew => :he,
+        :hungarian => :hu,
+        :italian => :it,
+        :korean => :ko,
+        :norwegian => :no,
+        :pinyin => :zh,
+        :polish => :pl,
+        :portuguese => :pt,
+        :russian => :ru,
+        :spanish => :es,
+        :swedish => :sv
+      }
+
+      lang_found = iso_codes[lang_found]
     end
 
     event[@target] = lang_found.to_s.force_encoding(Encoding::UTF_8)
