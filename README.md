@@ -13,11 +13,12 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 
 # Installation
 
-- Edit Logstash `Gemfile` and add the local plugin path, for example:
+- Edit Logstash `Gemfile` and add needed requirements:
 ```ruby
 gem "whatlanguage", :git => "https://github.com/peterc/whatlanguage.git", :ref => "0192301022"
 gem "logstash-filter-languagedetect", ">= 0.1.1", :git => "https://github.com/torstenfeld/logstash-filter-languagedetect.git"
 ```
+
 
 - Install and update dependencies
 ```sh
