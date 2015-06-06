@@ -7,7 +7,7 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 # Status
 - [![Gem Version](https://badge.fury.io/rb/logstash-filter-languagedetect.svg)](http://badge.fury.io/rb/logstash-filter-languagedetect)
 - [![Build Status](https://travis-ci.org/torstenfeld/logstash-filter-languagedetect.svg?branch=master)](https://travis-ci.org/torstenfeld/logstash-filter-languagedetect) (master)
-- [![Coverage Status](https://coveralls.io/repos/torstenfeld/logstash-filter-languagedetect/badge.svg)](https://coveralls.io/r/torstenfeld/logstash-filter-languagedetect)
+- [![Coverage Status](https://coveralls.io/repos/torstenfeld/logstash-filter-languagedetect/badge.svg?branch=master)](https://coveralls.io/r/torstenfeld/logstash-filter-languagedetect?branch=master)
 - [![Code Climate](https://codeclimate.com/github/torstenfeld/logstash-filter-languagedetect/badges/gpa.svg)](https://codeclimate.com/github/torstenfeld/logstash-filter-languagedetect)
 - [![Dependency Status](https://gemnasium.com/torstenfeld/logstash-filter-languagedetect.svg)](https://gemnasium.com/torstenfeld/logstash-filter-languagedetect)
 
@@ -15,8 +15,8 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 
 - Edit Logstash `Gemfile` and add needed requirements:
 ```ruby
-gem "whatlanguage", :git => "https://github.com/peterc/whatlanguage.git", :ref => "0192301022"
-gem "logstash-filter-languagedetect", ">= 0.1.1", :git => "https://github.com/torstenfeld/logstash-filter-languagedetect.git"
+gem "whatlanguage"
+gem "logstash-filter-languagedetect", ">= 0.2.0", :git => "https://github.com/torstenfeld/logstash-filter-languagedetect.git"
 ```
 
 
