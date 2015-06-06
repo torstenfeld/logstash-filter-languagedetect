@@ -9,6 +9,7 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 - [![Build Status](https://travis-ci.org/torstenfeld/logstash-filter-languagedetect.svg?branch=master)](https://travis-ci.org/torstenfeld/logstash-filter-languagedetect) (master)
 - [![Coverage Status](https://coveralls.io/repos/torstenfeld/logstash-filter-languagedetect/badge.svg)](https://coveralls.io/r/torstenfeld/logstash-filter-languagedetect)
 - [![Code Climate](https://codeclimate.com/github/torstenfeld/logstash-filter-languagedetect/badges/gpa.svg)](https://codeclimate.com/github/torstenfeld/logstash-filter-languagedetect)
+- [![Dependency Status](https://gemnasium.com/torstenfeld/logstash-filter-languagedetect.svg)](https://gemnasium.com/torstenfeld/logstash-filter-languagedetect)
 
 # Installation
 
