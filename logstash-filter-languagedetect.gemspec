@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-filter-languagedetect'
   s.version = '0.1.1'
-  s.version = "#{s.version}.pre.#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS_BRANCH'] != 'master'
+  s.version = "#{s.version}.pre.#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS'] and ENV['TRAVIS_BRANCH'] != 'master'
   s.licenses = ['Apache License (2.0)']
   s.summary = "This example filter replaces the contents of the message field with the specified value."
   s.description = "This gem is a logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/plugin install gemname. This gem is not a stand-alone program"
